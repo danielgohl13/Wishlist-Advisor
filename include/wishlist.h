@@ -27,7 +27,7 @@ private:
 public:
     void addList(Game game);
     Wishlist();
-    virtual ~Wishlist();S
+    virtual ~Wishlist();
 };
 
 
