@@ -13,9 +13,9 @@ private:
 
 
 public:
-    Game (int cod, float price, string name);
+    Game (int cod, float price, string name) : cod(cod), price(price), name(name);
     virtual ~Game();
-    void setPrice();
+    void setPrice(float price);
     float getPrice();
 
 };
@@ -27,8 +27,7 @@ private:
 public:
     void addList(Game game);
     Wishlist();
-    virtual ~Wishlist();
-
+    virtual ~Wishlist();S
 };
 
 
