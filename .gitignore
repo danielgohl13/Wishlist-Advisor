@@ -1,5 +1,7 @@
+build/
 .~lock.*
 .o
+tools/compileTemp.log
 
 #############################
 # Arquivos Gerados pelo OSX #
