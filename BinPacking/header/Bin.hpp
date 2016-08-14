@@ -1,7 +1,7 @@
 #if !defined  _BINPACKING_BIN
 #define _BINPACKING_BIN
 
-    #include "../../Util/Game.hpp"
+    #include "Game.hpp"
     #include <vector>
 
     namespace binpacking {
@@ -18,7 +18,7 @@
                 bool addItem(Game *item);
                 Game *at(unsigned int index);
 
-                int length();
+                unsigned int length();
                 float getSize();
                 float getMaxSize();
         };

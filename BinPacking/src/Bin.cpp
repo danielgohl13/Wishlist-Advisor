@@ -19,7 +19,7 @@ Game *Bin::at(unsigned int index){
     return this->items[index];
 }
 
-int Bin::length(){
+unsigned int Bin::length(){
     return this->items.size();
 }
 

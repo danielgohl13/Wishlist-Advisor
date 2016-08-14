@@ -2,9 +2,11 @@
 #define _BINPACKING
 
     #include "../Common/Common.hpp"
+    #include "header/Game.hpp"
     #include "header/Bin.hpp"
 
     namespace binpacking {
+        typedef std::vector<Game *> WishList;
         typedef std::vector<Bin *> BinCollection;
     }
 

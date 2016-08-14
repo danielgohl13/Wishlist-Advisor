@@ -1,4 +1,5 @@
-#include "../Game.hpp"
+#include "../BinPacking.hpp"
+using namespace binpacking;
 
 Game::Game(){}
 
