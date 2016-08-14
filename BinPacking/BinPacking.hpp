@@ -10,8 +10,8 @@
         typedef std::vector<Game *> WishList;
         typedef std::vector<Bin *> BinCollection;
 
-        BinCollection binpacking::doPacking(WishList wl, float binSize);
-        BinCollection binpacking::doPacking(WishList wl, float binSize, BinaryTree **tree);
+        BinCollection doPacking(WishList wl, float binSize);
+        BinCollection doPacking(WishList wl, float binSize, BinaryTree **tree);
     }
 
 #endif
