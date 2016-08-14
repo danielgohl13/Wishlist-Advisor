@@ -3,6 +3,7 @@
 
     #include "../Common/Common.hpp"
     #include "header/Game.hpp"
+    #include "header/BinaryTree.hpp"
     #include "header/Bin.hpp"
 
     namespace binpacking {
