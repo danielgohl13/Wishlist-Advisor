@@ -1,6 +1,7 @@
 build/
 .~lock.*
 .o
+*.json
 tools/compileTemp.log
 
 #############################
