@@ -126,31 +126,36 @@ bool BinaryTree::isEmpty(){
 
 void printSpaces(int spaces){
     for(int i = 1; i <= spaces; i++)
-		out->put((i == spaces) ? " - " : "  ");
+		out->put("  ");
 }
 
 void BinaryTree::print(){
-    this->print(0);
-}
 
-void BinaryTree::print(int spaces){
+    int count = 0;
+    BinaryTree *root = this;
+    BinaryTree *node = NULL;
 
-    out->put("(")
-       ->put(this->getItem()->getOrder())
-       ->put(", ")
-       ->put(this->getSize())
-       ->put(")", true);
+    while (root != NULL){
 
+        out->put("Bin #")->put(count);
+        out->put(" [")->put(root->getSize())->put("]", true);
 
-    if(this->hasLeft()){
-        printSpaces(spaces + 1);
-        out->put("L");
-        this->getLeft()->print(spaces + 1);
-    }
+        node = root;
+        int i = 0;
+        while (node != NULL) {
+            printSpaces(i++);
+            out->put(" (")
+               ->put(node->getItem()->getOrder())
+               ->put(", ")
+               ->put(node->getItem()->getPrice())
+               ->put(", ")
+               ->put(node->getItem()->getName())
+               ->put(")", true);
+            node = node->getLeft();
+        }
 
-    if(this->hasRight()){
-        printSpaces(spaces + 1);
-        out->put("R");
-        this->getRight()->print(spaces + 1);
+        root = root->getRight();
+        count++;
+        out->putNewLine();
     }
 }

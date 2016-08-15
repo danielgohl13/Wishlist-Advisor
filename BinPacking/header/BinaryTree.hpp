@@ -22,8 +22,6 @@
                 BinaryTree *setItem(Game *item);
                 void updateSize(Game *item);
 
-                void print(int spaces);
-
             public:
 
                 BinaryTree(float size);
