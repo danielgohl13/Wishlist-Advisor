@@ -25,10 +25,22 @@ function main(){
     bash -c "${buildDir}main $1 $2";
 }
 
+function fetchWishlist(){
+    bash -c "php -f fetchWishlist.php $1";
+}
+
 case $1 in
 
-    "fwl")
-        bash -c "./tools/fetchWishlist $2"
+    "fetchWishlist")
+        fetchWishlist "$2";
+    ;;
+
+    "fetchWishlist.")
+        fetchWishlist "$2";
+    ;;
+
+    "fetchWishlist.php")
+        fetchWishlist "$2";
     ;;
 
     "benchmark")

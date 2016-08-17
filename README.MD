@@ -11,7 +11,7 @@ Para compilar e executar a aplicação basta utilizar o script run.sh
     $ ./run.sh <input_json_file> <bin_size>
 
  ou:
- 
+
     $ ./run.sh main[.cpp] <input_json_file> <bin_size>
 
 * Para executar a aplicação de benchmark:
@@ -20,6 +20,6 @@ Para compilar e executar a aplicação basta utilizar o script run.sh
 
 * Para baixar a lista de desejos de um usuário steam:
 
-    $ ./run.sh fwl <steam_user_id>
+    $ ./run.sh fetchWishlist[.php] <steam_user_id>
 
 OBS.: O perfil do usuário deve ser está configurado para público!
