@@ -10,7 +10,7 @@ BinCollection binpacking::doPacking(WishList wl, float binSize, BinaryTree **tre
     BinCollection bc;
     BinaryTree *t = new BinaryTree(binSize);
 
-    for(int i = 0; i < wl.size(); i++){
+    for(unsigned int i = 0; i < wl.size(); i++){
         if(wl[i]->getPrice() > binSize) continue;
         t->insert(wl[i], binSize);
     }

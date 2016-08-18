@@ -42,13 +42,13 @@ int Application::main(){
     BinCollection bins = doPacking(wl, binSize, &t);
     Bin *b = NULL;
 
-    for(int i = 0; i < bins.size(); i++){
+    for(unsigned int i = 0; i < bins.size(); i++){
 
         out->put(i + 1)->put("ª Lista de Compras:", true);
         out->put("#\t Preço\t Nome", true);
 
         b = bins[i];
-        for(int j = 0; j < b->length(); j++){
+        for(unsigned int j = 0; j < b->length(); j++){
             out->put(b->at(j)->getOrder())
                ->put("\t ")
                ->put(b->at(j)->getPrice())
@@ -85,7 +85,7 @@ WishList parser(String fileName){
     WishList wl;
     json j = json::parse(content);
 
-    for(int i = 0; i < j.size(); i++){
+    for(unsigned int i = 0; i < j.size(); i++){
         wl.push_back(new Game(j[i]["order"], j[i]["price"], j[i]["name"]));
     }
 
